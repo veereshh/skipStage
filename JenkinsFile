@@ -1,0 +1,14 @@
+pipeline{
+	agent any
+	stages{
+		stage('build'){
+			echo 'building project'
+		}
+		stage('test'){
+			when{
+				branch 'master'
+			}
+			echo 'unit testing'
+		}
+	}
+}
