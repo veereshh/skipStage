@@ -6,7 +6,7 @@ pipeline{
 		}
 		stage('test'){
 			when{
-				branch 'master'
+				branch 'main'
 			}
 			echo 'unit testing'
 		}
